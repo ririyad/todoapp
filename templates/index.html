@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<h2>To-Do</h2>
+<head>
+    <title>{% block head_title %}Simple To-Do{% endblock head_title %}</title>
+</head>
+<h2>List</h2>
 
 {% for x in items %}
 <p>{{ x.name }} --> {{ x.created|date:"D d M Y" }}</p>
