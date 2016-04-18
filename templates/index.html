@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<head>
-    <title>{% block head_title %}Simple To-Do{% endblock head_title %}</title>
-</head>
-<h2>List</h2>
+<html>
+    <head>
+        <title>{% block head_title %}Simple To-Do{% endblock head_title %}</title>
+    </head>
+    <body>
+        <h2>List</h2>
 
-{% for x in items %}
-<p>{{ x.name }} --> {{ x.created|date:"D d M Y" }}</p>
+        {% for x in items %}
+        <p> {{ x.name }} --> {{ x.created|date:"D d M Y" }}</p>
 
-<p>{{ x.description }}</p>
-<hr />
-{% endfor %}
+        <p>{{ x.description }}</p>
+        <hr />
+        {% endfor %}
+
+    </body>
+</html>
