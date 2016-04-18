@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<h2>todo</h2>
+<h2>To-Do</h2>
 
 {% for x in items %}
-<p>{{ x.name }} - {{ x.created|date:"D d M Y" }}</p>
+<p>{{ x.name }} --> {{ x.created|date:"D d M Y" }}</p>
 
 <p>{{ x.description }}</p>
 <hr />
